@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #34efe6b1;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  background-color: #f91449e2;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input[type="file"] {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 70%;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+input[type="file"]:hover {
+  border-color: #4CAF50;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+#result {
+  margin-top: 40px;
+}
+
+/* Result Styles */
+.diff, .suggestions {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.diff h3, .suggestions h3 {
+  color: #4CAF50;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.diff p, .suggestions p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.diff p strong, .suggestions p strong {
+  color: #333;
+}
+
+.diff p {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.suggestions p {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Loading and Error Styles */
+#loading, #error {
+  font-size: 18px;
+  color: #f44336;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#loading {
+  color: #FFA500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input[type="file"] {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
